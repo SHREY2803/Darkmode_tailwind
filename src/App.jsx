@@ -1,14 +1,20 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
+import { use } from "react";
 
 function App() {
-  const [count, setCount] = useState(0);
+  // let [theme, setTheme] = useState('light');
 
+  // useEffect(() => {
+  //   document.documentElement.classList.add("dark");
+  // }, [theme]);
+  
   return (
     <>
-      <div className="h-screen w-screen flex flex-col justify-center items-center">
-        <button className="absolute right-10 top-10 bg-black text-white py-3 px-2 rounded-md">DarkMode</button>
+      <div className="h-screen w-screen flex flex-col justify-center items-center dark:bg-gray-900 dark:text-white ">
+        <button 
+        className="absolute right-10 top-10 bg-black text-white py-3 px-2 rounded-md dark:bg-white dark:text-black" >DarkMode</button>
         <h1 className="text-5xl text-center font-extrabold mb-9">
           Learning Darkmode with Tailwind css
         </h1>
